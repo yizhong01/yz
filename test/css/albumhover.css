@@ -1,0 +1,18 @@
+.album_list{
+    display: flex;
+    justify-content: space-between;
+}
+.album_list li{
+    width: calc(33.333% - 20px);
+    width: 0 10px;
+    list-style-type: none;
+}
+.album_list li img{
+    width: 100%;
+}
+.album_list li:hover{
+    opacity: 0.7;
+}
+.mainalbum_area img{
+    width: 100%;
+}

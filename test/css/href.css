@@ -1,0 +1,111 @@
+/*--------------------*/
+
+.m50 {
+    margin-bottom: 50px;
+}
+
+.title02 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.header_area {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    box-shadow: 0 0 20px -6px rgba(0,0,0,.5);
+}
+.main_area{
+    margin-top: 120px;
+}
+/*--------------------*/
+
+.link_btn_area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_btn {
+    border: 2px solid #000;
+    display: block;
+    width: calc(33.3333% - 20px);
+    margin: 0 10px;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.link_btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link_btn::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0rem;
+    right: 0rem;
+    height: 100%;
+    top: 0;
+    transform: scaleX(0);
+    background: #000;
+    transform-origin: center right;
+    transition: 0.5s transform ease;
+    z-index: -1;
+}
+
+.link_btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+/*----------innner----------*/
+
+.innerlink .link_btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-width: 0 2px 2px 0;
+    border-color: #000;
+    border-style: solid;
+    width: 8px;
+    height: 8px;
+    right: 20px;
+    top: 45%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 0.5s ease;
+}
+
+.innerlink .link_btn:hover::after {
+    border-color: #fff;
+}
+
+/*---------outer----------*/
+
+.outerlink .link_btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-width: 2px 2px 0 0;
+    border-color: #000;
+    border-style: solid;
+    width: 8px;
+    height: 8px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: 0.5s ease;
+}
+
+.outerlink .link_btn:hover::after {
+    border-color: #fff;
+}

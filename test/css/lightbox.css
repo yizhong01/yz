@@ -1,0 +1,35 @@
+.lightbox_list{
+    display: flex;
+}
+.lightbox_list li{
+    list-style-type: none;
+    max-width: calc(33.333% - 20px);
+    width: 100%;
+    margin: 0 10px;
+}
+.lightbox_list li img{
+    width: 100%;
+}
+.lightbox_list li:hover{
+    opacity: 0.7;
+}
+.lightboxmask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+
+}
+.lightboximg{
+    max-width: 70%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.lightboximg img{
+    width: 100%;
+}
